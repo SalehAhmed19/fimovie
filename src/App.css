@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Autography";
+  src: url(./assets/fonts/Autography.otf) format("otf");
+}
+
 * {
   background-color: transparent;
+}
+.text-autography {
+  font-family: "Autography", cursive;
 }

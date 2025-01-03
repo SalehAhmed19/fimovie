@@ -1,12 +1,34 @@
 import logo from "../../../assets/images/logo.webp";
 import menu from "../../../assets/Icons/menu.svg";
 import arrow from "../../../assets/Icons/arrow-bold.svg";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
   const options = ["Home", "Movie", "Portfolio", "Pages Blog", "Contact"];
 
+  const [isScrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="flex justify-between gap-5 p-5 bg-transparent fixed w-full border-b border-[#ffffff12]">
+    <nav
+      className={`flex justify-between gap-5 p-5 bg-transparent fixed w-full border-b border-[#ffffff12] ${
+        isScrolled ? " bg-[#181818] bg-opacity-100" : "bg-transparent"
+      }`}
+    >
       {/* Section 1 - Logo and Menu icon */}
       <div className="grid grid-cols-2 w-2/6 bg-transparent">
         <img src={logo} alt="logo" className="w-24 my-auto cursor-pointer" />

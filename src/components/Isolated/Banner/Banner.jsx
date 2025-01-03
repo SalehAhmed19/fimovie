@@ -20,12 +20,12 @@ const Banner = () => {
       <div className="flex pt-40">
         {/* Section 1 */}
         <div className="flex flex-col items-center w-[200px]">
-          <p className=" rotate-[-90deg] text-[#A8A8A8]">Follow</p>
-          <div className="w-[1px] h-[50px] bg-[#454545] my-10"></div>
+          <p className=" rotate-[-90deg] text-[#A8A8A8] mb-4">Follow</p>
+          <div className="w-[1.5px] h-[30px] bg-[#454545] m-10"></div>
           <div>
             {socials.map((social, idx) => (
               <div
-                className="border border-[#2D2D30] rounded-full p-2 my-3"
+                className="border border-[#2D2D30] rounded-full p-2 mb-3"
                 key={idx}
               >
                 <img className="w-[16px]" src={social} alt="" />
