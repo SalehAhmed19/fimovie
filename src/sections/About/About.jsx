@@ -4,6 +4,7 @@ const About = () => {
   return (
     <div className="bg-[#171717] ">
       <div className="max-w-7xl mx-auto grid grid-cols-2 gap-5 py-20">
+        {/* Section 1 */}
         <div className="">
           <div className="relative">
             <img src={image} alt="image" className="py-5" />
@@ -18,8 +19,10 @@ const About = () => {
             </div>
           </div>
         </div>
+
+        {/* Section 2 */}
         <div className="ml-20">
-          <h3 className="text-[#FB6402] tracking-widest">ABOUT ME</h3>
+          <h3 className="text-[#FB6402] tracking-widest uppercase">ABOUT ME</h3>
           <h2 className="font-bold text-5xl my-5">
             Creative & Expert <br />
             Film Director
