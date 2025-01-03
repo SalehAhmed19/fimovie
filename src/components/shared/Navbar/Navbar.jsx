@@ -4,6 +4,7 @@ import arrow from "../../../assets/Icons/arrow-bold.svg";
 
 const Navbar = () => {
   const options = ["Home", "Movie", "Portfolio", "Pages Blog", "Contact"];
+
   return (
     <nav className="flex justify-between gap-5 p-5 bg-transparent fixed w-full border-b border-[#ffffff12]">
       {/* Section 1 - Logo and Menu icon */}
