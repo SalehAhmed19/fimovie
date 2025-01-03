@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`flex justify-between gap-5 p-5 bg-transparent fixed w-full border-b border-[#ffffff12] ${
+      className={`flex justify-between gap-5 p-5 z-10 bg-transparent fixed w-full border-b border-[#ffffff12] ${
         isScrolled ? " bg-[#181818] bg-opacity-100" : "bg-transparent"
       }`}
     >
